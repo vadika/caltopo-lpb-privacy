@@ -12,21 +12,24 @@
 <header>
 <div class="brand"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="none" stroke="#41836b"><circle cx="16" cy="16" r="14"/><circle cx="16" cy="16" r="10"/><circle cx="16" cy="16" r="5"/></g><circle cx="16" cy="16" r="2" fill="#b97a25"/></svg>CALTOPO LPB PLANNER</div>
 <h1>Privacy policy</h1>
-<p class="lede">Your planning data stays in your browser until you choose to draw on a map or export a file.</p>
-<p class="meta">Publisher: Vadim Likholetov · Effective 27 October 2026</p>
+<p class="lede">Planning calculations run in your browser. Drawing on a map and loading optional heatmaps send the information described below to their providers.</p>
+<p class="meta">Publisher: Vadim Likholetov · Effective 30 October 2026</p>
 </header>
 <section><h2>What the extension does</h2>
-<p>CalTopo LPB Planner is an independent browser extension for creating lost person behaviour distance rings and directional boundaries on CalTopo and SARTopo maps. It is not affiliated with or endorsed by CalTopo.</p></section>
+<p>CalTopo LPB Planner is an independent browser extension for creating lost person behaviour distance rings, directional boundaries and track-offset boundaries on CalTopo and SARTopo maps. It is not affiliated with or endorsed by CalTopo.</p></section>
 <section><h2>Information used</h2>
 <p>The extension reads the current CalTopo or SARTopo map address and map objects, including marker names, identifiers and coordinates. It uses the profile, coordinates, bearing and display choices you enter to calculate drawings and update the marker list.</p>
 <p>It does not request your device location, read your browsing history, collect passwords or require an API key. It only accesses pages on caltopo.com and sartopo.com.</p></section>
 <section><h2>Local storage</h2>
 <p>Drafts, selected marker identifiers, map identifiers and publishing records are stored in the extension’s local browser storage. Publishing records track generated object identifiers and fingerprints so subsequent updates can detect conflicts and avoid duplicates. Temporary map and tab context is held in session storage.</p>
-<p>This information is not synced through the extension to other devices or sent to the publisher. The extension contains no analytics, advertising or tracking services.</p></section>
+<p>Drafts and publishing records are not synced through the extension to other devices or uploaded to the publisher. Reviewed Strava-derived path coordinates and their source settings are also saved locally. The extension contains no analytics, advertising or tracking services.</p></section>
+<section><h2>Optional Strava heatmap</h2>
+<p>When you click “Load candidate paths,” the extension requests Strava foot, cycling and winter heatmap image tiles from MapMap at mapmap.workingdog.fi, a service operated by Vadim Likholetov. Tile coordinates reveal the requested geographic area around your initial planning point. MapMap and its hosting providers can also receive your IP address and connection information. MapMap fetches or caches the images from Strava, which receives the requested tile area and MapMap’s connection information.</p>
+<p>These requests do not include your CalTopo map identifier, map objects, subject profile, or Strava credentials. Browser cookies are not sent with the requests. Path extraction, network analysis and offset calculations happen locally. Heatmap images are not uploaded from your browser; reviewed path coordinates are sent to CalTopo only when you publish drawings, or saved to a file when you export. Loading heatmaps is optional and does not run automatically.</p></section>
 <section><h2>Drawing, exporting and sharing</h2>
 <p>When you choose to publish or update drawings, the extension passes their titles, descriptions, coordinates and styles to the open CalTopo or SARTopo page. Saved maps use the website’s existing session and permissions; CalTopo may transmit and store those objects and make them available to people with access to the map. Its own privacy policy and sharing settings apply.</p>
 <p>Drawings on an unsaved map remain subject to CalTopo’s unsaved-map behaviour. Saving that map can upload them to CalTopo. Exporting GeoJSON creates a file on your device; sharing or importing that file is your choice.</p>
-<p>The publisher does not receive your map data and does not sell it, use it for advertising, or transfer it to data brokers.</p></section>
+<p>The publisher does not receive your map objects through the extension. Optional MapMap requests disclose the geographic tile area as described above. This information is not sold, used for advertising, or transferred to data brokers.</p></section>
 <section><h2>Your controls</h2>
 <p>You can change planning inputs, delete map objects in CalTopo, and remove downloaded exports. Uninstalling the extension removes its local browser storage. Uninstalling does not delete objects already saved on CalTopo or files you exported. Removing the extension’s site access prevents it from reading or editing maps.</p></section>
 <section id="support"><h2>This page and support</h2>
